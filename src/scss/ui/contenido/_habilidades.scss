@@ -1,0 +1,56 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+
+.habilidades {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__heading {
+        @include m.titulos(v.$primario);
+    }
+
+    &__grid {
+        @include m.tablet {
+        } 
+    }
+}
+
+.habilidad {
+    &__tipo {
+        @include m.titulos( darken(v.$secundario, 15%) );
+        margin: 2.5rem 0;
+    }
+
+    &__contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    &__grid {
+        @include m.tablet {
+              @include m.grid(4, 2rem);
+        } 
+    }
+
+    &__imagen {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    &__texto {
+        font-weight: 700;
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        color: v.$primario;
+        margin: 1rem 0;
+    }
+
+    &__elemento {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,66 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.proyectos {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__heading {
+        @include m.titulos(v.$primario);
+    }
+
+    &__grid {
+        @include m.tablet {
+              @include m.grid(2,2rem);
+        } 
+    }
+
+    &__tipo {
+        @include m.titulos(v.$secundario);
+        margin: 2.5rem;
+    }
+}
+
+.proyecto {
+    &__grid {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+        text-align: center;
+        border: 2px solid lighten(v.$primario, 40%);
+        margin-top: 1rem;
+        @include m.tablet {
+              margin-top: 0rem;
+        } 
+    }
+
+    &__imagen {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    &__contenido {
+        min-width: 15rem;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+    &__texto {
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    &__pagina {
+        font-weight: 700;
+        padding: 1rem 3rem;
+        border: 2px solid v.$primario;
+        display: inline-block;
+        margin-top: 1rem;
+        color: v.$primario;
+        &:hover {
+            border: 2px solid v.$secundario;
+        }
+    }
+}

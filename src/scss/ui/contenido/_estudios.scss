@@ -1,0 +1,85 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.estudios {
+
+    &__contenido {
+        background-color: v.$primario;
+        padding: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__heading {
+        @include m.titulos(v.$secundario);
+    }
+
+    &__grid {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        @include m.tablet {
+            @include m.grid(3, 2rem);
+        } 
+    }
+
+    &__enlace {
+        text-transform: uppercase;
+        border: 2px solid v.$secundario;
+        padding: 1rem 5rem;
+        font-weight: 700;
+        color: v.$secundario;
+        transition-property: background-color;
+        transition-duration: .3s;
+
+        &:hover {
+            background-color: v.$secundario;
+            color: v.$primario;
+        }
+    }
+
+}
+
+.estudio {
+    &__imagen {
+        width: 100%;
+        height: 30rem;
+    }
+    &__contenido {
+        background-color: v.$blanco;
+        padding: 2rem;
+        height: 30rem;
+        text-align: center;
+        border-end-end-radius: 2rem;
+        margin-bottom: 2rem;
+        @include m.tablet {
+             height:  27rem;
+        }
+    }
+    &__heading {
+        @include m.titulos(v.$primario);
+    }
+    &__institucion {
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+    &__fecha,
+    &__estado {
+        font-weight: 700;
+    }
+
+    &__pro {
+        order: -1;
+    }
+    @include m.tablet {
+        &__pro {
+            order: 0;
+        }
+    } 
+
+    &__enlace {
+        order: 1;
+    }
+}

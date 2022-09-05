@@ -1,0 +1,39 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.contactame {
+    margin-top: 5rem;
+    padding-top: 3rem;
+    background-color: v.$secundario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__heading {
+        @include m.titulos(v.$primario);
+    }
+
+    &__grid {
+        padding: 10rem 0;
+        @include m.tablet {
+            @include m.grid(4, 2rem);    
+        } 
+    }
+
+    &__contenido {
+        margin-bottom: 2rem;
+
+    }
+
+    &__imagen {
+        width: 15rem;
+        height: 15rem;
+        margin: 0 auto;
+    }
+
+    &__texto {
+        text-align: center;
+        font-weight: 700;
+        color: v.$primario;
+    }
+}
