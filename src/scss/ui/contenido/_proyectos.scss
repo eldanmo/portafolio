@@ -2,7 +2,7 @@
 @use '../../base/mixins' as m;
 
 .proyectos {
-    margin-top: 5rem;
+    margin-block: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,14 +53,6 @@
     }
 
     &__pagina {
-        font-weight: 700;
-        padding: 1rem 3rem;
-        border: 2px solid v.$primario;
-        display: inline-block;
-        margin-top: 1rem;
-        color: v.$primario;
-        &:hover {
-            border: 2px solid v.$secundario;
-        }
+        @include m.enlace;
     }
 }

@@ -69,3 +69,15 @@
         margin: 0 auto;
     }
 }
+
+@mixin enlace {
+    font-weight: 700;
+    padding: 1rem 3rem;
+    border: 2px solid v.$primario;
+    display: inline-block;
+    margin-top: 1rem;
+    color: v.$primario;
+    &:hover {
+         border: 2px solid v.$secundario;
+      }
+}

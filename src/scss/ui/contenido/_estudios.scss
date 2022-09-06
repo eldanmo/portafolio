@@ -9,6 +9,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        &--principal {
+            background-color: transparent;
+        }
     }
 
     &__heading {
@@ -81,5 +85,48 @@
 
     &__enlace {
         order: 1;
+    }
+}
+
+.estudios-informales {
+    margin-block: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__heading {
+        @include m.titulos(v.$primario);
+        margin-bottom: 2rem;
+    }
+    &__grid {
+        @include m.tablet {
+             @include m.grid(3, 2rem); 
+        } 
+    }
+}
+
+.estudio-informal {
+    border: 1px solid v.$primario;
+    border-radius: 2rem;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+    @include m.tablet {
+         margin-bottom: 0; 
+    } 
+
+    &__titulo {
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: v.$primario;
+    }
+
+    &__tipo,
+    &__estado,
+    &__institucion {
+        font-size: 2rem;
     }
 }

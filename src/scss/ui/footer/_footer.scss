@@ -3,14 +3,13 @@
 
 .footer {
     background-color: v.$primario;
-    margin-top: 5rem;
     padding: 10rem 0;
 
     &__grid {
         display: flex;
         flex-direction: column;
         @include m.tablet {
-             flex-direction: row; 
+             flex-direction: row-reverse; 
              justify-content: space-between;
              align-items: center;
         } 
