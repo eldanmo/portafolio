@@ -22,6 +22,12 @@ body {
 img {
     max-width: 100%;
     display: block;
+    transition-property: transform;
+    transition-duration: .3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 ul {
     padding:0;
