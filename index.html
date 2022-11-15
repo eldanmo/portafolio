@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="build/css/app.css">
     <link rel="shortcut icon" href="build/img/programacion.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
 </head>
 <body>
@@ -60,10 +61,10 @@
 
     </header>
 
-    <main class="sobre-mi contenedor">
-        <img src="build/img/iam.jpeg" alt="Foto Desarrollador" class="sobre-mi__imagen">
+    <main class="sobre-mi contenedor" >
+        <img src="build/img/iam.jpeg" alt="Foto Desarrollador" class="sobre-mi__imagen" data-aos="fade-down-right">
         <h2 class="sobre-mi__heading">Sobre Mi</h2>
-        <p class="sobre-mi__texto">
+        <p class="sobre-mi__texto" data-aos="fade-right">
             Hola, soy Moises Daniel Mora, Colombiano apasionado por la tecnología en general pero 
             especialmente por la programación. Soy autodidacta, me gusta aprender de todo y de todos 
             un poco. Mi especialidad es el desarrollo web frontend. Conoce de mi educación, 
@@ -75,7 +76,7 @@
         <img class="estudios__imagen" src="build/img/estudios.svg" alt="imagen fondo estudios">
         <div class="estudios__contenido">
             <h2 class="estudios__heading">Mis estudios</h2>
-            <div class="estudios__grid contenedor">
+            <div class="estudios__grid contenedor" data-aos="flip-left">
                 <div class="estudio">
                     <img src="build/img/sena.jpg" class="estudio__imagen" alt="imagen estudio">
                     <div class="estudio__contenido">
@@ -85,7 +86,7 @@
                         <p class="estudio__fecha">2019</p>
                     </div>
                 </div>
-                <div class="estudio estudio__pro">
+                <div class="estudio estudio__pro" data-aos="flip-left">
                     <img src="build/img/unad.jpg" class="estudio__imagen" alt="imagen estudio">
                     <div class="estudio__contenido">
                         <h3 class="estudio__heading">Ingeniería en sistemas</h3>
@@ -95,7 +96,7 @@
                     </div>
                 </div>
 
-                <div class="estudio">
+                <div class="estudio" data-aos="flip-left">
                     <img src="build/img/sena.jpg" class="estudio__imagen" alt="imagen estudio">
                     <div class="estudio__contenido">
                         <h3 class="estudio__heading">Técnico en sistemas</h3>
@@ -116,7 +117,7 @@
             <div class="habilidad">
                 <h3 class="habilidad__tipo">Desarrollo Web Frontend</h3>
                 <div class="habilidad__grid">
-                    <div class="habilidad__contenido">
+                    <div class="habilidad__contenido" data-aos="fade-up" data-aos-duration="1000">
                         <img src="build/img/html5.png" alt="imagen habilidad" class="habilidad__imagen">
                         <p class="habilidad__texto">HTML</p>
                         <ul class="habilidad__lista">
@@ -126,7 +127,7 @@
                             <li class="habilidad__elemento">✔ Formularios</li>
                         </ul>
                     </div>
-                    <div class="habilidad__contenido">
+                    <div class="habilidad__contenido" data-aos="fade-up" data-aos-duration="1000">
                         <img src="build/img/css3.png" alt="imagen habilidad" class="habilidad__imagen">
                         <p class="habilidad__texto">CSS</p>
                         <ul class="habilidad__lista">
@@ -138,7 +139,7 @@
                             <li class="habilidad__elemento">✔ First Mobile</li>
                         </ul>
                     </div>
-                    <div class="habilidad__contenido">
+                    <div class="habilidad__contenido" data-aos="fade-up" data-aos-duration="1000">
                         <img src="build/img/javascript.png" alt="imagen habilidad" class="habilidad__imagen">
                         <p class="habilidad__texto">javascript</p>
                         <ul class="habilidad__lista">
@@ -154,7 +155,7 @@
                             <li class="habilidad__elemento">✔ Async Await</li>
                         </ul>
                     </div>
-                    <div class="habilidad__contenido">
+                    <div class="habilidad__contenido" data-aos="fade-up" data-aos-duration="1000">
                         <img src="build/img/bootstrap.png" alt="imagen habilidad" class="habilidad__imagen">
                         <p class="habilidad__texto">Bootstrap</p>
                         <ul class="habilidad__lista">
@@ -163,7 +164,7 @@
                             <li class="habilidad__elemento">✔ Ulidades</li>
                         </ul>
                     </div>
-                    <div class="habilidad__contenido">
+                    <div class="habilidad__contenido" data-aos="fade-up" data-aos-duration="1000">
                         <img src="build/img/react.png" alt="imagen habilidad" class="habilidad__imagen">
                         <p class="habilidad__texto">ReactJS</p>
                         <ul class="habilidad__lista">
@@ -177,7 +178,7 @@
             </div>
             <div class="habilidad">
                 <h3 class="habilidad__tipo">Desarrollo Web Back End</h3>
-                <div class="habilidad__contenido">
+                <div class="habilidad__contenido" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <img src="build/img/php.png" alt="imagen habilidad" class="habilidad__imagen">
                     <p class="habilidad__texto">PHP</p>
                     <ul class="habilidad__lista">
@@ -196,7 +197,7 @@
             <div class="habilidad">
                 <h3 class="habilidad__tipo">Bases de Datos</h3>
                 <div class="habilidad__grid">
-                    <div class="habilidad__contenido">
+                    <div class="habilidad__contenido" data-aos="zoom-in-down">
                         <img src="build/img/sqlserver.png" alt="imagen habilidad" class="habilidad__imagen">
                         <p class="habilidad__texto">Sql Server</p>
                         <ul class="habilidad__lista">
@@ -205,7 +206,7 @@
                             <li class="habilidad__elemento">✔ CRUD</li>
                         </ul>
                     </div>
-                    <div class="habilidad__contenido">
+                    <div class="habilidad__contenido" data-aos="zoom-in-down">
                         <img src="build/img/potsgre.png" alt="imagen habilidad" class="habilidad__imagen">
                         <p class="habilidad__texto">PotsgreSQL</p>
                         <ul class="habilidad__lista">
@@ -214,7 +215,7 @@
                             <li class="habilidad__elemento">✔ CRUD</li>
                         </ul>
                     </div>
-                    <div class="habilidad__contenido">
+                    <div class="habilidad__contenido" data-aos="zoom-in-down">
                         <img src="build/img/mySql.jpg" alt="imagen habilidad" class="habilidad__imagen">
                         <p class="habilidad__texto">MySQL</p>
                         <ul class="habilidad__lista">
@@ -223,7 +224,7 @@
                             <li class="habilidad__elemento">✔ CRUD</li>
                         </ul>
                     </div>
-                    <div class="habilidad__contenido">
+                    <div class="habilidad__contenido" data-aos="zoom-in-down">
                         <img src="build/img/excel.png" alt="imagen habilidad" class="habilidad__imagen">
                         <p class="habilidad__texto">Excel</p>
                         <ul class="habilidad__lista">
@@ -237,7 +238,7 @@
             </div>
             <div class="habilidad">
                 <h3 class="habilidad__tipo">Otros</h3>
-                <div class="habilidad__contenido">
+                <div class="habilidad__contenido" data-aos="flip-up">
                     <img src="build/img/git.png" alt="imagen habilidad" class="habilidad__imagen">
                     <p class="habilidad__texto">Git</p>
                     <ul class="habilidad__lista">
@@ -252,25 +253,25 @@
     <section class="contactame">
         <h2 class="contactame__heading">Contactame!!</h2>
         <div class="contactame__grid">
-            <div class="contactame__contenido">
+            <div class="contactame__contenido" data-aos="flip-left">
                 <a href="tel:3203188839">
                     <img src="build/img/telefono.png" alt="imagen contactame" class="contactame__imagen">
                     <p class="contactame__texto">+57 3203188839</p>
                 </a>
             </div>
-            <div class="contactame__contenido">
+            <div class="contactame__contenido" data-aos="flip-left">
                 <a href="https://api.whatsapp.com/send/?phone=573203188839&text=Hola%2C&type=phone_number&app_absent=0" target="_blank">
                     <img src="build/img/whatsapp.png" alt="imagen contactame" class="contactame__imagen">
                     <p class="contactame__texto">+57 3203188839</p>
                 </a>
             </div>
-            <div class="contactame__contenido">
+            <div class="contactame__contenido" data-aos="flip-left">
                 <a href="mailto:daniel_mora0407@outlook.com">
                     <img src="build/img/email.png" alt="imagen contactame" class="contactame__imagen">
                     <p class="contactame__texto">daniel_mora0407@outlook.com</p>
                 </a>
             </div>
-            <div class="contactame__contenido">
+            <div class="contactame__contenido" data-aos="flip-left">
                 <a href="https://www.linkedin.com/in/moises-daniel-mora-orjuela-a0478710a/" target="_blank">
                     <img src="build/img/linkedin.png" alt="imagen contactame" class="contactame__imagen">
                 </a>
@@ -469,6 +470,11 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
