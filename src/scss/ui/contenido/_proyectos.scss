@@ -31,6 +31,7 @@
         text-align: center;
         border: 2px solid lighten(v.$primario, 40%);
         margin-top: 1rem;
+        min-height: 34rem;
         @include m.tablet {
               margin-top: 0rem;
         } 
